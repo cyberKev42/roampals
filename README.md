@@ -386,5 +386,6 @@ a configured `JWT_TOKEN_SECRET`.
 <div align="center">
 
 Built by **Kevin Bräuer** · [github.com/cyberKev42](https://github.com/cyberKev42)
+      and **Haruka Shinazawa**
 
 </div>
