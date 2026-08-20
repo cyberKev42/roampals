@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "RoamPals",
+    "slug": "RoamPals",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/images/RoamPals-icon.png",
+    "scheme": "roampals",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSMotionUsageDescription": "RoamPals nutzt deine Bewegungsdaten, um deine Schritte zu zählen.",
+        "NSLocationWhenInUseUsageDescription": "RoamPals nutzt deinen Standort, um das aktuelle Wetter anzuzeigen."
+      },
+      "bundleIdentifier": "com.kbrauer.RoamPals"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./src/assets/images/android-icon-foreground.png",
+        "backgroundImage": "./src/assets/images/android-icon-background.png",
+        "monochromeImage": "./src/assets/images/android-icon-monochrome.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./src/assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./src/assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#000000"
+          }
+        }
+      ],
+      "expo-secure-store",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "RoamPals nutzt deinen Standort, um das aktuelle Wetter anzuzeigen."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}

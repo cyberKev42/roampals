@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+#  backend:
+#    image: roampals-image
+#    ports:
+#      - "8080:8081"
+  # 1. Java-App
+#  web-app:
+#    build: .
+#    ports:
+#      - "8090:8090"
+#    environment:
+#      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres-db:5432/roampalsDB
+#      - SPRING_DATASOURCE_USERNAME=postgres
+#      - SPRING_DATASOURCE_PASSWORD=roampalsPW
+#    depends_on:
+#      - postgres-db
+
+  # 2. PostgreSQL-Datenbank
+  postgres-db:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-roampalsPW}
+      POSTGRES_DB: ${POSTGRES_DB:-roampalsDB}
+    ports:
+      - "5439:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql
+volumes:
+  postgres_data:

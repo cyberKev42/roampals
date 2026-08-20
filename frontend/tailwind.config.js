@@ -1,0 +1,35 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  presets: [require("nativewind/preset")],
+  theme: {
+    extend: {
+      fontFamily: {
+        allura: ['Allura-Regular'],
+        bungee: ['Bungee-Regular'],
+        dangrek: ['Dangrek-Regular'],
+        lilita: ['LilitaOne-Regular'],
+        lobster: ['LobsterTwo-Regular'],
+        'lobster-bold': ['LobsterTwo-Bold'],
+        'lobster-italic': ['LobsterTwo-Italic'],
+        'lobster-bold-italic': ['LobsterTwo-BoldItalic'],
+        monomaniac: ['MonomaniacOne-Regular'],
+        monoton: ['Monoton-Regular'],
+        'playwrite-id': ['PlaywriteID-Regular'],
+        'playwrite-nz': ['PlaywriteNZ-Regular'],
+        shrikhand: ['Shrikhand-Regular'],
+        fredoka: ['Fredoka-Regular'],
+        'fredoka-medium': ['Fredoka-Medium'],
+        'fredoka-semibold': ['Fredoka-SemiBold'],
+        'fredoka-bold': ['Fredoka-Bold'],
+        nunito: ['Nunito-Regular'],
+        'nunito-bold': ['Nunito-Bold'],
+        baloo: ['Baloo2-Regular'],
+        'baloo-bold': ['Baloo2-Bold'],
+        quicksand: ['Quicksand-Regular'],
+        'quicksand-bold': ['Quicksand-Bold'],
+      },
+    },
+  },
+  plugins: [],
+};
